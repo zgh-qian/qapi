@@ -1,0 +1,30 @@
+server:
+  port: 8090
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: api_route
+          uri: http://localhost:8110
+          predicates:
+            - Path=/api/**
+      default-filters:
+        - AddRequestHeader=source, qapi
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: trace
+qapi:
+  client:
+    secret-key: qapi
+    access-key: qapi
+# dubbo 配置
+dubbo:
+  application:
+    name: dubbo-springboot-demo-consumer
+    logger: slf4j
+    qos-port: 33333
+  registry:
+    address: nacos://localhost:8848

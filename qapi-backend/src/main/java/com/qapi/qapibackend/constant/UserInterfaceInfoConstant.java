@@ -1,0 +1,32 @@
+package com.qapi.qapibackend.constant;
+
+public interface UserInterfaceInfoConstant {
+    String USER_INTERFACE_INFO_ = "";
+    String USER_INTERFACE_INFO_ADD_SUCCESS = "添加成功";
+
+    String USER_INTERFACE_INFO_ADD_FAILURE = "添加失败";
+
+    String USER_INTERFACE_INFO_UPDATE_SUCCESS = "更新成功";
+
+    String USER_INTERFACE_INFO_UPDATE_FAILURE = "更新失败";
+
+    String USER_INTERFACE_INFO_DELETE_SUCCESS = "删除成功";
+
+    String USER_INTERFACE_INFO_DELETE_FAILURE = "删除失败";
+
+    String USER_INTERFACE_INFO_SEARCH_FAILURE = "查询失败";
+
+    String USER_INTERFACE_INFO_USER_NOT_EXIST = "用户不存在";
+
+    String USER_INTERFACE_INFO_USER_IS_BANNED = "用户已被禁用";
+
+    String USER_INTERFACE_INFO_INTERFACE_INFO_NOT_EXIST = "接口不存在";
+
+    String USER_INTERFACE_INFO_REQUEST_RECORD_NOT_EXIST = "请求记录不存在";
+
+    String USER_INTERFACE_INFO_INTERFACE_INFO_UPDATE_PERMISSION_DENIED = "无权修改接口信息";
+
+    String USER_INTERFACE_INFO_INTERFACE_INFO_DELETE_PERMISSION_DENIED = "无权删除接口信息";
+    String USER_INTERFACE_INFO_INVOKE_COUNT_FAILURE = "调用次数更新失败";
+
+}
